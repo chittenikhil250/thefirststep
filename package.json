@@ -1,0 +1,26 @@
+{
+  "name": "thefirststep-next",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "axios": "^0.26.1",
+    "file-loader": "^6.2.0",
+    "next": "12.1.5",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-icons": "^4.3.1",
+    "react-lazy-load-image-component": "^1.5.4",
+    "swiper": "^8.1.3",
+    "url-loader": "^4.1.1"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-next": "12.1.5"
+  }
+}

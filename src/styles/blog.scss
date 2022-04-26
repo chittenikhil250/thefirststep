@@ -1,0 +1,67 @@
+@import 'main';
+.blog-logo{
+    display: block !important;
+    width: 100px !important;
+}
+.date-blog{
+    color: $dim-text;
+    font-size: small;
+}
+.duration-blog{
+    font-size: small;
+    color: $dim-text;
+}
+.audiobook{
+    margin-top: 5px !important;
+}
+.blod-tag{
+    display: inline !important;
+}
+.blogcontainer{
+    margin-top: 25px;
+}
+.blogitem{
+    margin-bottom: 20px;
+}
+.blogtemplogo{
+    width: 110px;
+    display: inline;
+}
+.presents-blog{
+    color: $dim-text;
+    display: inline-block;
+}
+.blogtemp{
+    margin-top: 7vh;
+}
+.blog-content{
+    margin-top: 5px;
+    text-align: justify;
+}
+.blog-title{
+    display: inline-block;
+}
+.hr{
+    color: $dark-base;
+    height: 3px !important;
+}
+.blogside{
+    position: absolute;
+    top: 37vh;
+    left: 0.9vw;
+    margin: auto;
+    width: 170px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 1.5px 1.5px 2px 2px rgb(202, 194, 194) ;
+}
+@media(max-width:992px){
+    .blogside{
+        display: none;
+    }
+}
+.blogsidetext{
+    color: $dim-text;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  padding-top: 0;
+  -webkit-box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ul-nav {
+  margin-top: 10px;
+  margin-left: 1vw;
+}
+
+.mp-nav {
+  margin-top: 1.5px !important;
+  padding: 0 15px !important;
+}
+
+.nav-ka-items {
+  padding-left: 20px;
+  padding-right: 15px;
+}
+
+.link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  font-size: larger;
+}
+
+.link:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar-toggler {
+  padding: 0;
+  border: 0;
+  margin-top: 10px;
+}
+
+.btn-1 {
+  width: 120%;
+  display: inline-block;
+  font-weight: 600;
+  color: white;
+  background-color: #F8ADAD;
+  height: 32px;
+  padding-top: 2.5px;
+  -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.btn-1:hover {
+  color: #fff;
+}
+
+.btn-2 {
+  width: 120%;
+  font-weight: 600;
+  color: #F8ADAD;
+  border: 2px solid #F8ADAD;
+  height: 32px;
+  padding-top: 2.5px;
+  -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.09);
+          box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.09);
+}
+
+.btn-2:hover {
+  color: #F8ADAD;
+}
+
+@media (max-width: 992px) {
+  .btn-1, .btn-2 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .navbar-collapse {
+    text-align: justify;
+    height: 90vh;
+    margin: 2vh 0;
+  }
+  .ul-nav-2 {
+    margin-top: 12vh;
+    text-align: center;
+  }
+  .ul-nav-2 .btn {
+    font-size: larger;
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100%;
+  }
+  .nav-ka-items {
+    margin-top: 2.8vh;
+    font-size: larger;
+  }
+}
+
+.navbar-toggler span {
+  display: block;
+  background-color: #F8ADAD;
+  height: 3px;
+  width: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  left: 0;
+  opacity: 1;
+  -webkit-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out;
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+}
+/*# sourceMappingURL=navbar.css.map */

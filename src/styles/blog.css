@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.blog-logo {
+  display: block !important;
+  width: 100px !important;
+}
+
+.date-blog {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: small;
+}
+
+.duration-blog {
+  font-size: small;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.audiobook {
+  margin-top: 5px !important;
+}
+
+.blod-tag {
+  display: inline !important;
+}
+
+.blogcontainer {
+  margin-top: 25px;
+}
+
+.blogitem {
+  margin-bottom: 20px;
+}
+
+.blogtemplogo {
+  width: 110px;
+  display: inline;
+}
+
+.presents-blog {
+  color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+}
+
+.blogtemp {
+  margin-top: 7vh;
+}
+
+.blog-content {
+  margin-top: 5px;
+  text-align: justify;
+}
+
+.blog-title {
+  display: inline-block;
+}
+
+.hr {
+  color: #F58585;
+  height: 3px !important;
+}
+
+.blogside {
+  position: absolute;
+  top: 37vh;
+  left: 0.9vw;
+  margin: auto;
+  width: 170px;
+  height: 200px;
+  border-radius: 10px;
+  padding: 10px;
+  -webkit-box-shadow: 1.5px 1.5px 2px 2px #cac2c2;
+          box-shadow: 1.5px 1.5px 2px 2px #cac2c2;
+}
+
+@media (max-width: 992px) {
+  .blogside {
+    display: none;
+  }
+}
+
+.blogsidetext {
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
+}
+/*# sourceMappingURL=blog.css.map */

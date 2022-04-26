@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.havesomething {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.initiatediscussion {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px;
+  background-color: #F58585;
+  color: white;
+}
+
+.initiatediscussion:hover {
+  color: white !important;
+}
+
+@media (min-width: 762px) {
+  .initiatediscussion {
+    margin-left: 23px;
+  }
+}
+
+.discus-tag {
+  padding: 5px;
+  display: inline-block;
+  margin: 5px;
+}
+
+.discussion-item {
+  -webkit-box-shadow: 2px 3px #e0dede;
+          box-shadow: 2px 3px #e0dede;
+  -webkit-filter: drop-shadow(2px 3.81px 3.81px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(2px 3.81px 3.81px rgba(0, 0, 0, 0.1));
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1vw;
+  border-radius: 5px;
+}
+
+.userprofile {
+  border-radius: 50%;
+}
+
+.disnow {
+  color: #F58585;
+  float: right;
+}
+
+.disnow:hover {
+  color: #F58585;
+}
+
+.discustextreply {
+  width: 40vw;
+}
+
+@media (max-width: 992px) {
+  .discustextreply {
+    width: 55vw;
+  }
+}
+
+@media (max-width: 762px) {
+  .discustextreply {
+    width: 70vw;
+  }
+}
+/*# sourceMappingURL=discussion.css.map */

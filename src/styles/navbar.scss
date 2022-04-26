@@ -1,0 +1,100 @@
+@import 'main';
+.navbar{
+    padding-top: 0;
+    box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.1);
+}
+.ul-nav{
+    margin-top: 10px;
+    margin-left: 1vw;
+}
+.mp-nav{
+    margin-top: 1.5px !important;
+    padding: 0 15px !important;
+}
+.nav-ka-items{
+    padding-left: 20px;
+    padding-right: 15px;
+}
+.link{
+    text-decoration: none;
+    color: $black;
+    cursor: pointer;
+    font-size: larger;
+    &:hover{
+        color: $black;
+    }
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+.navbar-toggler{
+    padding: 0;
+    border: 0;
+    margin-top: 10px;
+}
+.btn-1{
+    width: 120%;
+    display: inline-block;
+    font-weight: 600;
+    color: white;
+    background-color: $base;
+    height: 32px;
+    padding-top: 2.5px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
+    &:hover{
+        color: #fff;
+    }
+}
+.btn-2{
+    width: 120%;
+    font-weight: 600;
+    color: $base;
+    border: 2px solid $base;
+    height: 32px;
+    padding-top: 2.5px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.09);
+    &:hover{
+        color: $base;
+    }
+}
+@media(max-width:992px){
+    .btn-1, .btn-2{
+        width: fit-content;
+    }
+    .navbar-collapse {
+        text-align: justify;
+        height: 90vh;
+        margin: 2vh 0;
+    }
+    .ul-nav-2{
+        margin-top: 12vh;
+        text-align: center;
+        .btn{
+            font-size: larger;
+            height: auto;
+            padding-top: 0;
+            padding-bottom: 0;
+            width: 100%;
+        }
+    }
+    .nav-ka-items{
+        margin-top: 2.8vh;
+        font-size: larger;
+    }
+}
+.navbar-toggler span {
+    display: block;
+    background-color: $base;
+    height: 3px;
+    width: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    transition: all 0.35s ease-out;
+    transform-origin: center left;
+}
