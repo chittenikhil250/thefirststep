@@ -18,7 +18,7 @@ const BlogItem = ({loading, blogData}) => {
 
     const blogArray = blogData.slice(0, 10);
     if(loading){
-        return <img src={loading1} alt='' width={100} height={100}/>
+        return <Img src={loading1} alt='' width={100} height={100}/>
     }
   return (
     <>

@@ -1,10 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import Link from 'next/link'
 import logo from "../assets/logo.png"
 import Img from 'next/image'
+import {RiArrowDropDownLine} from 'react-icons/ri'
 
 
 const Navbar = () => {
+
+    const [clicked, setClicked] = useState(false)
+
   return (
     <>
       <nav className='navbar navbar-expand-lg'>
@@ -42,14 +46,18 @@ const Navbar = () => {
                                         <span className="link">Blog</span>
                                     </Link> 
                                 </li>
-                                <li className='nav-ka-items '>
-                                    <Link href='/contact'>
-                                        <span className="link">Contact</span>
-                                        {/* <> */}
-                                        {/* contact  */}
-                                        {/* <select name="contactdropdown" id="contactdropdown"></select> */}
-                                        {/* </> */}
-                                    </Link>  
+                                <li className='nav-ka-items'>
+                                    <a onClick={()=> setClicked(!clicked)} className="link dropdown-toggle">
+                                      Contact
+                                    </a>
+                                    <div className={clicked ? 'position-absolute dorpmenucustom' : 'd-none'}>
+                                      <a className="dropdown-item" >
+                                          <Link href="/contact/speaker"><span className='link'>Speaker </span></Link></a>
+                                      <a className="dropdown-item" >
+                                          <Link href="/contact/ambassador"><span className='link'>Youth Ambassador </span></Link></a>
+                                      <a className="dropdown-item">
+                                          <Link href="/contact/media"><span className='link'>Media </span></Link></a>
+                                    </div>
                                 </li> 
                             </ul>
                         <ul className="navbar-nav ul-nav ul-nav-2 ms-auto mb-2 mb-lg-0">
@@ -72,3 +80,23 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+{/* <ul className={clicked ? 'dropdownitemscustom' : 'd-none'}>
+                                            <li className="items">
+                                               <Link href='/contact/speaker'>
+                                               <span className="link">Speaker</span> 
+                                               </Link> 
+                                            </li>
+                                            <li className="items">
+                                               <Link href='/contact/ambassador'>
+                                               <span className="link">Youth Ambassador</span> 
+                                               </Link>
+                                            </li>
+                                            <li className="items">
+                                               <Link href='/contact/media'>
+                                               <span className="link">Media </span> 
+                                               </Link>
+                                            </li>
+                                        </ul> */}

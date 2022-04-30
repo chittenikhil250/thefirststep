@@ -126,4 +126,16 @@
   -webkit-transform-origin: center left;
           transform-origin: center left;
 }
+
+.dropdownitemscustom {
+  list-style-type: none;
+}
+
+.dorpmenucustom {
+  background: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 2px 2px grey;
+          box-shadow: 2px 2px 2px 2px grey;
+  margin-top: 22px;
+}
 /*# sourceMappingURL=navbar.css.map */

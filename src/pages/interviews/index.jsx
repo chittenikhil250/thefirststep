@@ -3,6 +3,7 @@ import Navbar from '../../Components/Navbar'
 import {AiFillFilter} from 'react-icons/ai'
 import axios from 'axios'
 import Intitem from '../../Components/interviews/InitItem'
+import Footer from '../../Components/Footer'
 
 
 
@@ -45,6 +46,7 @@ const Interviews = () => {
     <h2 className='int-head'>Entrepreneurs</h2>
     <Intitem loading={loading} currentPosts={currentPosts} setPostsCount={setPostsCount} postsCount={postsCount}/>
     </div>
+    <Footer/>
     </>
   )
 }

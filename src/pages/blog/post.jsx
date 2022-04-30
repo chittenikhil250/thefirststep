@@ -14,6 +14,7 @@ import Instagram from '../../assets/Instagram Circle.png'
 import Twitter from '../../assets/Twitter Circled.png'
 import CopyLink from '../../assets/Link.png'
 import Img from 'next/image'
+import Footer from '../../Components/Footer'
 
 
 const BlogTemplate = () => {
@@ -32,7 +33,7 @@ const BlogTemplate = () => {
     <span className='date-blog'>24/02/2003</span> &nbsp;
     <span className='duration-blog'> ⏱ 3 min </span> &nbsp;
     <span className="buz-grid-item ml-3 blog-tag">{(1)*3} hello </span> &nbsp;
-    <LazyLoadImage src={audioBook} alt="" />
+    <Img src={audioBook} alt="" /> 
     <p className='blog-content'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam obcaecati nesciunt quaerat, id nihil minima? Qui aut voluptates cupiditate eligendi. Aliquam quod eveniet ab quam reiciendis ex ut numquam iure voluptatibus veniam, dolore illo porro assumenda corrupti unde veritatis suscipit, cupiditate et aperiam placeat corporis. Praesentium temporibus quam animi rerum quod molestiae, minus recusandae deserunt quae officia debitis sit alias porro beatae consectetur dolore doloremque eaque non placeat similique enim laudantium velit. Porro laudantium quibusdam quae tempora commodi voluptatum expedita, sunt necessitatibus officiis excepturi quidem distinctio nisi atque! Aut autem repellat, deserunt quasi dolor laborum perferendis dolorum laboriosam, numquam tenetur at id similique exercitationem corporis blanditiis ea deleniti possimus! Ut pariatur unde, dolores perferendis atque quisquam dolor non saepe eos inventore optio est voluptas commodi aliquid veritatis soluta dicta at, enim beatae quidem! Odit sint harum beatae temporibus, esse aliquid suscipit magni quaerat vitae voluptatum tenetur excepturi culpa, illum impedit commodi aut incidunt. Laborum perspiciatis nam deleniti autem rem eos dignissimos accusantium sequi libero quisquam. Totam esse officia, quos nisi cum fugiat. Ducimus labore deserunt quod iusto nobis nisi at doloribus, repellat quas atque libero sint voluptatem assumenda porro ullam fugiat ipsum inventore dolore. Obcaecati maiores minima pariatur eius illum?</p>
     <hr className='hr' />
     </div>
@@ -49,6 +50,7 @@ const BlogTemplate = () => {
       <Img src={Instagram} alt="" />&nbsp; 
       <Img src={CopyLink} alt="" /> &nbsp;
     </div>
+    <Footer/>
     </>
   )
 }

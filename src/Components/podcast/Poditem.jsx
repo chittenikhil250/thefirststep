@@ -21,7 +21,9 @@ const PodItem = ({posts, loading}) => {
   }
 
   if(loading){
-      return <center><img src={loading1} alt="" width={100} height={100} /></center>
+      return (
+        <center><Img src={loading1} alt="" width={100} height={100} /></center>
+      )
   }
 
   return (
@@ -30,7 +32,7 @@ const PodItem = ({posts, loading}) => {
         posts.map(item => (
           <LazyLoadComponent key={keygen()}>
           <div className="podcast-item" key={keygen()}>
-            <img src={logo} className='podcast-logo' alt="" /> 
+            <Img src={logo} className='podcast-logo' alt="" /> 
             <span className='date-podcast'>24/02/2003</span> 
             <span className='duration-podcast'> ⏱ 30 min </span> <br />
             <h4 className='pod-title'>{item.title}</h4>&nbsp;&nbsp;

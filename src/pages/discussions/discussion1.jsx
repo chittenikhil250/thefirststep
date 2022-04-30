@@ -6,7 +6,7 @@ import {FaShare} from 'react-icons/fa'
 import {BsBellFill} from 'react-icons/bs'
 import medal from '../../assets/pinkprize.png'
 import comment from '../../assets/pinkComments.png'
-
+import Footer from '../../Components/Footer'
 
 
 
@@ -66,6 +66,7 @@ const discussion1 = () => {
     }
     </div>
     </div>
+    <Footer/>
     </>
   )
 }

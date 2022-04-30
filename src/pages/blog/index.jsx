@@ -3,6 +3,7 @@ import Navbar from '../../Components/Navbar'
 import {AiFillFilter} from 'react-icons/ai'
 import BlogItem from '../../Components/blog/BlogItem'
 import axios from 'axios'
+import Footer from '../../Components/Footer'
 import Pagination from '../../Components/Pagination'
 
 
@@ -42,6 +43,7 @@ const Blog = () => {
     />
     <Pagination paginate={paginate} postsPerPage={postsPerPage} totalPosts={blogData.length*0.5} />
     </div>
+    <Footer/>
     </>
   )
 }

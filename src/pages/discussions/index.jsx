@@ -9,6 +9,7 @@ import eye from '../../assets/eye.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import loading1 from '../../assets/loading.gif'
+import Footer from '../../Components/Footer'
 
 
 
@@ -119,6 +120,7 @@ const Discussions = () => {
     </Swiper>
     </div>
     </div>
+    <Footer/>
     </>
   )
 }

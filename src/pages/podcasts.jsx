@@ -9,6 +9,9 @@ import oldest from '../assets/oldest.png'
 import axios from 'axios'
 import Pagination from '../Components/Pagination'
 import loading1 from '../assets/loading.gif'
+import Img from 'next/image'
+import Footer from '../Components/Footer'
+
 
 
 
@@ -45,7 +48,7 @@ const Podcasts = () => {
       <div className="container mt-5">
       <span className='community l-tilt'>Podcasts </span>
       <input className='search search-pod' type="text" name="" id=""  placeholder='search for tags, titles, dates and authors&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔍'/> <br />
-      <Suspense fallback={<img alt='' src={loading1} />}>
+      <Suspense fallback={<Img alt='' src={loading1} />}>
       <PodItem posts={currentPosts} loading={loading}/>
       </Suspense>
       <Pagination postsPerPage={postsPerPage} totalPosts={posts.length*0.009} paginate={paginate}/>
@@ -56,26 +59,27 @@ const Podcasts = () => {
         </center>
         <ul className="sort-li">
           <li className="dim-text medalli">
-            <span className='medal'><img src={medal} alt="" /> </span>&nbsp; <p className='sort-names'>Medals</p> <input type="checkbox" name="" id="" />
+            <span className='medal'><Img src={medal} alt="" /> </span>&nbsp; <p className='sort-names'>Medals</p> <input type="checkbox" name="" id="" />
           </li>
           <li className="dim-text duralli">
             ⏱ <p className='sort-names'>Duration</p> <input type="checkbox" name="" id="" />
           </li>
           <li className="dim-text hearli">
-            <span className='medal'><img src={ear} alt="" /></span>&nbsp; <p className='sort-names'>Hears</p> <input type="checkbox" name="" id="" />
+            <span className='medal'><Img src={ear} alt="" /></span>&nbsp; <p className='sort-names'>Hears</p> <input type="checkbox" name="" id="" />
           </li>
           <li className="dim-text commentli">
-            <span className='medal'><img src={comment} alt="" /> </span> &nbsp;<p className='sort-names'>Comments</p> <input type="checkbox" name="" id="" />
+            <span className='medal'><Img src={comment} alt="" /> </span> &nbsp;<p className='sort-names'>Comments</p> <input type="checkbox" name="" id="" />
           </li>
           <li className="dim-text latestli">
-            <span className='medal'><img src={latest} alt="" /></span>&nbsp;<p className='sort-names'>Latest</p><input type="checkbox" name="" id="" />
+            <span className='medal'><Img src={latest} alt="" /></span>&nbsp;<p className='sort-names'>Latest</p><input type="checkbox" name="" id="" />
           </li>
           <li className="dim-text oldestli">
-            <span className='medal'><img src={oldest} alt="" /></span>&nbsp;<p className='sort-names'>Oldest</p><input type="checkbox" name="" id="" />
+            <span className='medal'><Img src={oldest} alt="" /></span>&nbsp;<p className='sort-names'>Oldest</p><input type="checkbox" name="" id="" />
           </li>
         </ul>
       </div>
       </div>
+      <Footer/>
     </>
   )
 }
