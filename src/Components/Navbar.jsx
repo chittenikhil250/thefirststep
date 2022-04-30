@@ -51,12 +51,21 @@ const Navbar = () => {
                                       Contact
                                     </a>
                                     <div className={clicked ? 'position-absolute dorpmenucustom' : 'd-none'}>
+                                          <Link href="/contact/speaker">
                                       <a className="dropdown-item" >
-                                          <Link href="/contact/speaker"><span className='link'>Speaker </span></Link></a>
+                                              <span className='link'>Speaker </span>
+                                    </a>
+                                            </Link>
+                                          <Link href="/contact/ambassador">
                                       <a className="dropdown-item" >
-                                          <Link href="/contact/ambassador"><span className='link'>Youth Ambassador </span></Link></a>
+                                              <span className='link'>Youth Ambassador </span> 
+                                        </a>
+                                          </Link>
+                                          <Link href="/contact/media">
                                       <a className="dropdown-item">
-                                          <Link href="/contact/media"><span className='link'>Media </span></Link></a>
+                                              <span className='link'>Media </span>
+                                        </a>
+                                          </Link>
                                     </div>
                                 </li> 
                             </ul>

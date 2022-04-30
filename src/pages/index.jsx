@@ -40,7 +40,7 @@ export default function Home() {
       achievers </h1>
       <div className="no-mobile">
       <p className='invisible'>we do interviews, write blogs, make podcasts and a lot like </p> <p className='young'>young</p>
-      <p className="tagline"> we do interviews, write blogs, make podcasts and a lot more with  leaders </p>
+      <p className="tagline"> we do interviews, write blogs, make podcasts and a lot more with  <span className='base'> leaders</span> </p>
     <center>
 
     <ul className='center'>
