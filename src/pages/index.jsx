@@ -10,7 +10,6 @@ import podcasts from '../assets/podcasts.png';
 import discussions from '../assets/discussions.png';
 import blogs from '../assets/blogs.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Link from 'next/link'
 import 'swiper/css';
 import 'swiper/css/pagination';
 import SwiperCore, { Pagination } from 'swiper';
@@ -18,6 +17,10 @@ import img1 from '../assets/image 1.png';
 import img2 from '../assets/image 2.png';
 import img3 from '../assets/image 3.png';
 import Footer from '../Components/Footer';
+import emailjs from '@emailjs/browser';
+import {useRef} from 'react'
+
+
 
 const keygen = () => Math.random()*1000 
 
@@ -25,6 +28,17 @@ SwiperCore.use([Pagination]);
 const CarouselItems = [img1, img2, img3]
 
 export default function Home() {
+
+  const form = useRef()
+  // const sendMail = () => {
+  //   form.preventDefault();
+  //   emailjs.sendForm('service_e3zpd3p', 'template_b5ku8vg', form.current, 'WSNxt_9P0zTf2Ks9f')
+  //     .then((result) => {
+  //         console.log(result.text);
+  //     }, (error) => {
+  //         console.log(error.text);
+  //     });
+  // } 
 
   return (
     <>
@@ -234,7 +248,9 @@ blogs too!
         <div className="col-lg-7 pl-5vv">
         <h3>want to share <span className='yourstory'>your story</span> with us?</h3>
         <h4 className='dim'>That’s simple, just write to us and we’ll look into it</h4>
-        <form>
+        <form ref={form}
+        //  onSubmit={sendMail()}
+         >
             <label htmlFor="name">Name</label> 
             <input type="text" name="name" id="name" />
             <label htmlFor="contact">Contact</label>
