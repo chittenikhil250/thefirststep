@@ -5,7 +5,7 @@ import Img from 'next/image';
 import {FaShare} from 'react-icons/fa';
 import {BsBellFill} from 'react-icons/bs';
 import comment from '../../assets/pinkComments.png';
-import medal from '../../assets/pinkPrize.png';
+import medal from '../../assets/pinkprize2.png';
 import Footer from '../../Components/Footer';
 
 
