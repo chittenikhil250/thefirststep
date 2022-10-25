@@ -94,7 +94,7 @@ const Discussions = () => {
         <div className='discussion-item'>
           <p className="buz-grid-item ml-3 discus-tag">Speech </p> 
           <p className="buz-grid-item ml-3 discus-tag">motivation </p>
-          <Link href='/discussions/discussion1'>
+          <Link href='/discussions/discussion1' passHref>
           <h5 className='link mt-3'>Do You think achievers are born created ?</h5>
           </Link> 
           <Img className='userprofile' width={30} height={30} src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
@@ -105,7 +105,7 @@ const Discussions = () => {
           <hr />
           <Img className='userprofile' width={25} height={25} src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
           <span className="dim-text">+20 more </span>
-          <Link href='/discussions/discussion1'>
+          <Link href='/discussions/discussion1' passHref>
           <i className='disnow link'><u>Discuss</u></i>
           </Link>
         </div>
