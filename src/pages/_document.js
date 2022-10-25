@@ -8,7 +8,6 @@ export default function Document() {
       <Head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <title>The first Step </title>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet"/>
@@ -17,7 +16,6 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossOrigin="anonymous"></script>
       </body>
     </Html>
   )
