@@ -1,12 +1,12 @@
-import React from 'react'
-import Navbar from '../../Components/Navbar'
-import pinkmedal from '../../assets/pinkprize.png'
-import Img from 'next/image'
-import {FaShare} from 'react-icons/fa'
-import {BsBellFill} from 'react-icons/bs'
-import comment from '../../assets/pinkComments.png'
-import Footer from '../../Components/Footer'
-import medal from '../../assets/pinkPrize.png'
+import React from 'react';
+import Navbar from '../../Components/Navbar';
+import pinkmedal from '../../assets/pinkprize.png';
+import Img from 'next/image';
+import {FaShare} from 'react-icons/fa';
+import {BsBellFill} from 'react-icons/bs';
+import comment from '../../assets/pinkComments.png';
+import medal from '../../assets/pinkPrize.png';
+import Footer from '../../Components/Footer';
 
 
 
