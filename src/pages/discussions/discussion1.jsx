@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from '../../Components/Navbar';
-import pinkmedal from '../../assets/pinkprize.png';
 import Img from 'next/image';
 import {FaShare} from 'react-icons/fa';
 import {BsBellFill} from 'react-icons/bs';
@@ -46,7 +45,7 @@ const discussion1 = () => {
     <p className="buz-grid-item ml-3 discus-tag">motivation </p> <br />
     <h4 className='inb'>Do you think achievers ? </h4>
     <span className='dim-text'> posted {2} min ago </span> 
-    <span className='dim-text'><Img src={pinkmedal} alt=''/> give a medal</span> <br />
+    {/* <span className='dim-text'><Img src={pinkmedal} alt=''/> give a medal</span> <br /> */}
     <i className='disnow float-none'> <FaShare /> <u>SHARE </u> </i> &nbsp;
     <i className='disnow float-none'><BsBellFill /> <u>FOLLOW </u></i>
     <textarea name="" id="" className='mt-3 discustextreply p-2' placeholder='start writing here...' rows="10"></textarea>
