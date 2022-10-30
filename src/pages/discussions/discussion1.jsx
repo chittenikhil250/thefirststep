@@ -5,7 +5,7 @@ import Img from 'next/image';
 import {FaShare} from 'react-icons/fa';
 import {BsBellFill} from 'react-icons/bs';
 import comment from '../../assets/pinkComments.png';
-import medal from '../../assets/pinkprize2.png';
+import medal2 from '../../assets/pinkprize2.png';
 import Footer from '../../Components/Footer';
 
 
@@ -59,7 +59,7 @@ const discussion1 = () => {
           <Img className='userprofile' width={25} height={25} src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
           <span className="dim-text"> by {res.name}</span>
           <p>{res.comment}</p>
-          <span className='medal' ><Img src={medal} alt="" /> {res.medals}</span>&nbsp;
+          {/* <span className='medal' ><Img src={medal2} alt="" /> {res.medals}</span>&nbsp; */}
           <span className='medal'><Img src={comment} alt="" /> {res.comments}</span> &nbsp;
         </div>
       ))
